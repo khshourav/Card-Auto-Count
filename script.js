@@ -7,11 +7,12 @@ window.onscroll = () => {
         // navbar.style.borderBottom = '4px solid green';
         navbar.classList.remove('bg-light');
         navbar.classList.add('bg-success');
-        document.getElementsByTagName('a').style.color=white;
+        document.body.classList.add('scrolled');
     }
     else{
         navbar.classList.remove('bg-primary');
         navbar.classList.add('bg-light');
+        document.body.classList.remove('scrolled');
     }
 }
 
@@ -35,7 +36,7 @@ function autoCount(card, endNumber){
         else{
             clearInterval(count);
         }
-    }, 20);
+    }, 100);
 
 }
 
