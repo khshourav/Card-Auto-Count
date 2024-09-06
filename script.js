@@ -18,8 +18,6 @@ window.onscroll = () => {
 
 // Our Achievements code
 
-let projects = document.getElementById('projects');
-
 let cards = document.querySelectorAll('.dgit');
 cards.forEach((card, index)=>{
     let endNumber = parseInt(card.innerHTML);
@@ -39,4 +37,6 @@ function autoCount(card, endNumber){
     }, 100);
 
 }
+
+
 
